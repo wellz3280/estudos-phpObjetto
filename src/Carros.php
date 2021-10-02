@@ -15,9 +15,16 @@ class Carros
 		$this->cor = $cor;
 		$this->tipo = $tipo;
 		$this->valor = $valor;
+
+		
 	}
 
-	public function parcelarCarro(float $qtd)
+	public function __destruct()
+	{
+
+	}
+
+	private function parcelarCarro(float $qtd)
 	{
 		return $parcelas = $this->valor/$qtd;
 	}
