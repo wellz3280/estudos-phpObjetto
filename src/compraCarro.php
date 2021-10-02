@@ -2,11 +2,12 @@
 
 	require 'Carros.php';
 
-	$carro1 = new Carros();
+	$carro1 = new Carros('fiat','argo','prata','sedan',65000);
+	$carro2 = new Carros('volkswagem','gol','prata','hetch',45000);
 
-	$carro1->marca = 'fiat';
-	$carro1->modelo = 'argo';
-	$carro1->cor = 'prata';
-	$carro1->tipo = 'sedan';
-	$carro1->valor = 65000;
+	echo $carro2->parcelarCarro(1);
+
+
+
+	
 
